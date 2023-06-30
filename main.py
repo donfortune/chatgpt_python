@@ -12,6 +12,7 @@ class ChatbotWindow(QMainWindow):
 
         self.chat_box = QTextEdit(self)
         self.chat_box.setGeometry(10, 10, 480, 320)
+        self.chat_box.setReadOnly(True)
 
 
 
