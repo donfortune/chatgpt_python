@@ -19,6 +19,7 @@ class ChatbotWindow(QMainWindow):
 
         self.input_box = QLineEdit(self)
         self.input_box.setGeometry(10, 340, 480, 35)
+        self.input_box.returnPressed.connect(self.submit_request)
 
 
         self.button = QPushButton('Submit', self)
