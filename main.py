@@ -11,8 +11,16 @@ class ChatbotWindow(QMainWindow):
         self.setMinimumSize(700, 500)
 
         self.chat_box = QTextEdit(self)
+        self.chat_box.setGeometry(10, 10, 480, 320)
+
+
+
         self.input_box = QLineEdit(self)
+        self.input_box.setGeometry(10, 340, 480, 35)
+
+
         self.button = QPushButton('Submit', self)
+        self.button.setGeometry(500, 340, 100, 40)
 
         self.show()
     
