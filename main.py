@@ -29,7 +29,7 @@ class ChatbotWindow(QMainWindow):
         self.show()
 
     def submit_request(self):
-        user_input = self.input_box.text().strip()
+        user_input = self.input_box.text().strip() #accept user input 
         self.chat_box.append(f"Prompt: {user_input}")
         self.input_box.clear()
 
